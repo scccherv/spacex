@@ -136,6 +136,9 @@ body {
   padding: 1rem 0;
   width: 30rem;
 }
+.table .dirty {
+  color: #808080;
+}
 .rocket {
   position: absolute;
   right: 0;
@@ -144,7 +147,8 @@ body {
   max-width: 30rem;
 }
 .footer {
-  width: 600px;
+  max-width: 600px;
+  width: 80%;
   padding: 300px 0 400px 0;
   margin: auto;
   text-align: center;
@@ -201,6 +205,12 @@ body {
   border: 2px solid #ffffff;
   border-radius: 6px;
 }
+.button:focus {
+  color: #010001;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+}
 @media (max-width: 920px) {
   .rocket {
     max-width: 200px;
@@ -223,7 +233,7 @@ body {
     line-height: 20px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 769px) {
   .rocket {
     position: relative;
     left: 50%;
@@ -263,5 +273,78 @@ body {
   }
   .secondary-nav {
     margin: auto;
+  }
+}
+@media (max-width: 585px) {
+  .footer {
+    margin: auto;
+  }
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item {
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+  .table {
+    max-width: 100px;
+    font-size: 12px;
+    padding: 60px 0;
+  }
+  .footer {
+    margin: auto;
+  }
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item {
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+  }
+  .footer .button {
+    font-size: 12px;
+    padding: 20px 40px;
+  }
+  .features-text {
+    max-width: 280px;
   }
 }

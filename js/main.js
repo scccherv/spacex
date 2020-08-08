@@ -5,8 +5,7 @@ var instance = new vidbg('.video', {
     overlay: false, // Boolean to display the overlay or not
   });
   var rellax = new Rellax('.rocket');
-
-  if (document.body.clientWidth < 670) {
+  if (document.body.clientWidth < 769) {
     rellax.destroy();
   }
   AOS.init();
